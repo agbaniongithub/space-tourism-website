@@ -1,14 +1,18 @@
 import React from 'react'
 import Image from 'next/image'
+import { MobileNav } from './MobileNav'
+import MainNav from './MainNav'
 
 const Header = () => {
   return (
-    <header className='fixed p-6 text-design-2 w-full flex justify-between items-center'>
+    <header className='fixed p-6 text-design-2 w-full flex justify-between items-center sm:px-[39px]'>
+          
           <div>
             <Image src='/assets/shared/logo.svg'alt='Logo'width={40}height={40}/>
           </div>
           <div>
-            <Image src='/assets/shared/icon-hamburger.svg'alt='Logo'width={24}height={21}/>
+            <MainNav />
+            <MobileNav />
           </div>
 
     </header>
