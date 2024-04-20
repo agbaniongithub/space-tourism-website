@@ -24,6 +24,8 @@ export default function Layout({
   else if (pathname === "/destination/titan") {
     activeImage = "/assets/destination/image-titan.png"
   }
+
+  
   
   return (
     <main className='bg-destination-mobile md:bg-destination-tablet lg:bg-destination-desktop bg-cover min-h-screen p-6 pt-[88px] md:pt-[136px] md:px-[38.5] lg:pt-[212px] lg:px-[166.5px]'>

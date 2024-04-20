@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import { cn } from "@/lib/utils";
 
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 const bellefair = Bellefair({
@@ -39,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${barlow.variable} ${barlow_condensed.variable} ${bellefair.variable}`}>
-      <body className={cn("min-h-screen relative")}>
+      <body className={cn("min-h-screen max-w-screen-lg relative")}>
           <Header />
           {children}
       </body>

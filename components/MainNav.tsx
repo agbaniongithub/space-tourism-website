@@ -11,7 +11,7 @@ const MainNav = () => {
           <Link
               href="/"
               rel="noreferrer"
-              className={cn("py-[24px] hover:border-b-2", pathname === "/" && "border-b-2,")}
+              className={cn("py-[24px] hover:border-b-2", pathname === "/" && "border-b-2")}
             >
               <span className='hidden lg:inline font-bold'>00 </span>HOME
             </Link>

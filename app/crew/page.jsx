@@ -19,7 +19,19 @@ const CrewPage = () => {
 
           <ul>
             <li>
-              <Link href="/"/>
+              <Link href="/crew"/>
+            </li>
+            <li>
+              <Link href="/crew/"/>
+            </li>
+            <li>
+              <Link href="/crew/"/>
+            </li>
+            <li>
+              <Link href="/crew/"/>
+            </li>
+            <li>
+              <Link href="/crew/"/>
             </li>
           </ul>
         </div>
