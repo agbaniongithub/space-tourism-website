@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 const bellefair = Bellefair({
   subsets: ['latin'],
-  weight: "400",
+  weight: '400',
   display: 'swap',
   variable: '--font-bellefair',
 })
@@ -21,7 +21,7 @@ const barlow = Barlow({
 })
 const barlow_condensed = Barlow_Condensed({
   subsets: ['latin'],
-  weight: "400",
+  weight: '400',
   display: 'swap',
   variable: '--font-barlow_condensed',
 })
