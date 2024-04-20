@@ -40,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${barlow.variable} ${barlow_condensed.variable} ${bellefair.variable}`}>
-      <body className={cn("min-h-screen max-w-screen-lg relative")}>
+      <body className={cn("min-h-screen  relative")}>
           <Header />
           {children}
       </body>
