@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation'
 const MainNav = () => {
   const pathname = usePathname()
   return (
-    <nav className='hidden md:flex gap-[37px] font-barlow_condensed text-[14px] bg-white bg-opacity-[4%] md:absolute md:right-0 md:top-0 lg:top-[40px] px-[39px] lg:px-[165px] text-design-3 tracking-[2.7px]'>
+    <nav className='hidden md:flex gap-[37px] font-barlow_condensed text-[14px] lg:text-base bg-white bg-opacity-[4%] md:absolute md:right-0 md:top-0 lg:top-[40px] px-[39px] lg:px-[165px] text-design-3 tracking-[2.7px]'>
           <Link
               href="/"
               rel="noreferrer"
@@ -20,13 +20,13 @@ const MainNav = () => {
               rel="noreferrer"
               className={cn("py-[24px] hover:border-b-2 ", pathname.includes("/destination") && "border-b-2")}
             >
-              <span className='hidden lg:inline'>01 </span>DESTINATION
+              <span className='hidden lg:inline font-bold'>01 </span>DESTINATION
             </Link>
           <Link
               href="/crew"
               rel="noreferrer"
               className={cn("py-[24px] hover:border-b-2", pathname.includes("/crew") && "border-b-2")}
-            ><span className='hidden lg:inline'>02 </span>
+            ><span className='hidden lg:inline font-bold'>02 </span>
               CREW
             </Link>
           <Link
