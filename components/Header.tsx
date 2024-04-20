@@ -12,7 +12,7 @@ const Header = () => {
           
           <div>
             <Image src='/assets/shared/logo.svg'alt='Logo'width={40}height={40}/>
-            <hr className='hidden lg:inline w-full border-[#383B4B]'/>
+            <hr className='hidden lg:inline w-7 border-[#ffffff]'/>
           </div>
           <div>
             <MainNav />

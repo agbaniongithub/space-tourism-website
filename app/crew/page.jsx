@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const CrewPage = () => {
   return (
-    <main className='bg-crew-mobile bg-cover min-h-screen p-6 pt-[88px] text-center'>
+    <main className='bg-crew-mobile md:bg-crew-tablet lg:bg-crew-desktop bg-cover min-h-screen p-6 pt-[88px] text-center'>
       <div className='flex gap-[18px] justify-center mb-8'>
         <p className='text-design-3 text-base font-barlow_condensed tracking-widest text-opacity-[25%]'>02</p>
         <p className='text-design-3 text-base font-barlow_condensed tracking-widest'>MEET YOUR CREW</p>

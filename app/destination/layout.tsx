@@ -26,26 +26,28 @@ export default function Layout({
   }
   
   return (
-    <main className='bg-crew-mobile bg-cover min-h-screen p-6 pt-[88px]'>
-      <div className='flex gap-[18px] justify-center'>
-        <p className='text-design-3 text-base font-barlow_condensed tracking-widest text-opacity-[25%]'>01</p>
-        <p className='text-design-3 text-base font-barlow_condensed tracking-widest'>PICK YOUR DESTINATION</p>
+    <main className='bg-destination-mobile md:bg-destination-tablet lg:bg-destination-desktop bg-cover min-h-screen p-6 pt-[88px] md:pt-[136px] md:px-[38.5]'>
+      <div className='flex gap-[18px] justify-center md:justify-start'>
+        <p className='text-design-3 text-base md:text-[20px] font-barlow_condensed tracking-widest md:tracking-[3.38px] text-opacity-[25%]'>01</p>
+        <p className='text-design-3 text-base md:text-[20px] font-barlow_condensed tracking-widest md:tracking-[3.38px]'>PICK YOUR DESTINATION</p>
       </div>
-      <div className="flex flex-col items-center gap-[26px] mt-8">
-        <Image src={activeImage}alt="Image"width={170}height={170}/>
+      <div className="flex flex-col items-center gap-[26px] md:gap-[53px] mt-8 md:mt-[60px]">
+        <div className="h-[170px] w-[170px] md:h-[300px] md:w-[300px]">
+          <Image src={activeImage}alt="Image"width={1000}height={1000}/>
+        </div>
         <div>
-          <nav className="mx-auto flex justify-center gap-4 font-barlow_condensed text-[14px] md:text-base tracking-[2.7px] text-design-2">
-        <Link href="/destination"className={cn("pb-[11px] transition-all hover:border-b-2" , pathname === "/destination" && "border-b-2")}
+          <nav className="mx-auto flex justify-center gap-4 font-barlow_condensed text-[14px] md:text-base tracking-[2.7px] text-design-2 mb-[20px] md:mb-[32px]">
+        <Link href="/destination"className={cn("pb-[11px] hover:border-b-2" , pathname === "/destination" && "border-b-2 text-design-3")}
 >
           MOON
         </Link>
-        <Link href="/destination/mars"className={cn("pb-[11px] transition-all hover:border-b-2" , pathname === "/destination/mars" && "border-b-2")} >
+        <Link href="/destination/mars"className={cn("pb-[11px] hover:border-b-2" , pathname === "/destination/mars" && "border-b-2 text-design-3")} >
           MARS
         </Link>
-        <Link href="/destination/europa"className={cn("pb-[11px] transition-all hover:border-b-2" , pathname === "/destination/europa" && "border-b-2")}>
+        <Link href="/destination/europa"className={cn("pb-[11px] hover:border-b-2" , pathname === "/destination/europa" && "border-b-2 text-design-3")}>
           EUROPA
         </Link>
-        <Link href="/destination/titan"className={cn("pb-[11px] transition-all hover:border-b-2" , pathname === "/destination/titan" && "border-b-2")}>
+        <Link href="/destination/titan"className={cn("pb-[11px] hover:border-b-2" , pathname === "/destination/titan" && "border-b-2 text-design-3")}>
           TITAN
         </Link>
           </nav>
