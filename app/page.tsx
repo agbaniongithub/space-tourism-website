@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const HomePage = () => {
@@ -8,9 +9,11 @@ const HomePage = () => {
         <p className='text-design-3 text-[80px] lg:text-[150px] font-bellefair'>SPACE</p>
         <p className='text-design-2 font-barlow text-[15px] md:text-[16px] lg:text-[18px] text-center lg:text-left leading-7 lg:leading-[32px] lg:max-w-[450px]'>Let&apos;s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we&apos;ll give you a truly out of this world experience!</p>
       </div>
-      <div className='max-lg:mx-auto rounded-[50%] bg-design-3 h-[150px] w-[150px] md:h-[242px] md:w-[242px] flex items-center justify-center mt-[10rem]'>
-        <p className='font-bellefair text-xl md:text-3xl tracking-widest '>EXPLORE</p>
-      </div>
+      <Link href='/destination' className='max-lg:mx-auto rounded-[50%] bg-design-3 h-[150px] w-[150px] md:h-[242px] md:w-[242px] lg:h-[274px] lg:w-[274px] flex items-center justify-center mt-[10rem] hover:scale-110 transition-transform'>
+        <div className=' bg-white bg-opacity-0 hover:bg-opacity-10 w-[450px] h-[450px] absolute rounded-full transition-all ease-in-out' />
+          <p className='font-bellefair text-xl md:text-3xl tracking-widest '>EXPLORE</p>
+
+      </Link>
       
     </main>
   )

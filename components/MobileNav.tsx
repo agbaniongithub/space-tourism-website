@@ -21,23 +21,23 @@ export function MobileNav() {
         <Image src='/assets/shared/icon-hamburger.svg'alt='Logo'width={24}height={21}/>
       </SheetTrigger>
       <SheetContent side="right">
+      <div className="flex flex-col gap-8 mt-[118px] mx-4 text-design-3 font-barlow_condensed text-base tracking-[2.7px]">
         <MobileLink
           onOpenChange={setOpen}
           href="/"
           className="flex items-center"
         >
-  
-          <span className="font-bold">d</span>
+          <span className="font-bold mr-[14px]">00</span><span>HOME</span>
         </MobileLink>
-        <div className="flex flex-col gap-3 mt-3">
-          <MobileLink onOpenChange={setOpen} href="/projects">
-            Projects
+        
+          <MobileLink onOpenChange={setOpen} href="/destination">
+            <span className="font-bold mr-[14px]">01</span><span>DESTINATION</span>
           </MobileLink>
-          <MobileLink onOpenChange={setOpen} href="/blog">
-            Blog
+          <MobileLink onOpenChange={setOpen} href="/crew">
+            <span className="font-bold mr-[14px]">02</span><span>CREW</span>
           </MobileLink>
-          <MobileLink onOpenChange={setOpen} href="/about">
-            About
+          <MobileLink onOpenChange={setOpen} href="/technology">
+            <span className="font-bold mr-[14px]">03</span><span>TECHNOLOGY</span>
           </MobileLink>
         </div>
       </SheetContent>

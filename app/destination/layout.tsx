@@ -39,17 +39,17 @@ export default function Layout({
         </div>
         <div className="lg:flex lg:flex-col lg:items-start">
           <nav className="max-lg:mx-auto flex justify-center gap-4 font-barlow_condensed text-[14px] md:text-base tracking-[2.7px] text-design-2 mb-[20px] md:mb-[32px]">
-        <Link href="/destination"className={cn("pb-[11px] hover:border-b-2" , pathname === "/destination" && "border-b-2 text-design-3")}
+        <Link href="/destination"className={cn("pb-[11px] hover:border-b-2 border-design-3 border-opacity-50" , pathname === "/destination" && "border-b-2 border-opacity-100 text-design-3")}
 >
           MOON
         </Link>
-        <Link href="/destination/mars"className={cn("pb-[11px] hover:border-b-2" , pathname === "/destination/mars" && "border-b-2 text-design-3")} >
+        <Link href="/destination/mars"className={cn("pb-[11px] hover:border-b-2 border-design-3 border-opacity-50" , pathname === "/destination/mars" && "border-b-2 border-opacity-100 text-design-3")} >
           MARS
         </Link>
-        <Link href="/destination/europa"className={cn("pb-[11px] hover:border-b-2" , pathname === "/destination/europa" && "border-b-2 text-design-3")}>
+        <Link href="/destination/europa"className={cn("pb-[11px] hover:border-b-2 border-design-3 border-opacity-50" , pathname === "/destination/europa" && "border-b-2 border-opacity-100 text-design-3")}>
           EUROPA
         </Link>
-        <Link href="/destination/titan"className={cn("pb-[11px] hover:border-b-2" , pathname === "/destination/titan" && "border-b-2 text-design-3")}>
+        <Link href="/destination/titan"className={cn("pb-[11px] hover:border-b-2 border-design-3 border-opacity-50" , pathname === "/destination/titan" && "border-b-2 border-opacity-100 text-design-3")}>
           TITAN
         </Link>
           </nav>

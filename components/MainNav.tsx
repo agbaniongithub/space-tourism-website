@@ -11,28 +11,28 @@ const MainNav = () => {
           <Link
               href="/"
               rel="noreferrer"
-              className={cn("py-[24px] hover:border-b-2", pathname === "/" && "border-b-2")}
+              className={cn("py-[24px] hover:border-b-2 border-design-3 border-opacity-50", pathname === "/" && "border-b-2 border-opacity-100")}
             >
               <span className='hidden lg:inline font-bold'>00 </span>HOME
             </Link>
           <Link
               href="/destination"
               rel="noreferrer"
-              className={cn("py-[24px] hover:border-b-2 ", pathname.includes("/destination") && "border-b-2")}
+              className={cn("py-[24px] hover:border-b-2 border-design-3 border-opacity-50 ", pathname.includes("/destination") && "border-b-2 border-opacity-100")}
             >
               <span className='hidden lg:inline font-bold'>01 </span>DESTINATION
             </Link>
           <Link
               href="/crew"
               rel="noreferrer"
-              className={cn("py-[24px] hover:border-b-2", pathname.includes("/crew") && "border-b-2")}
+              className={cn("py-[24px] hover:border-b-2 border-design-3 border-opacity-50", pathname.includes("/crew") && "border-b-2 border-opacity-100")}
             ><span className='hidden lg:inline font-bold'>02 </span>
               CREW
             </Link>
           <Link
               href="/technology"
               rel="noreferrer"
-              className={cn("py-[24px] hover:border-b-2", pathname.includes("/technology") && "border-b-2")}
+              className={cn("py-[24px] hover:border-b-2 border-design-3 border-opacity-50", pathname.includes("/technology") && "border-b-2 border-opacity-100")}
             >
               <span className='hidden lg:inline font-bold'>03 </span>TECHNOLOGY
             </Link>
